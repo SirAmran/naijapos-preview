@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>POS, stock and accounting for Nigerian businesses · NaijaPOS</title>
+<style>
+  :root{--p:#0F766E;--a:#F59E0B;--ink:#0f172a;--muted:#5b6472;--line:#e2e8f0;--bg:#f8fafc}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,Segoe UI,system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  a{color:var(--p)}
+  header{background:#fff;border-bottom:1px solid var(--line)}
+  .bar{max-width:1040px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .logo{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:-.02em;text-decoration:none;color:var(--ink)}
+  .logo span.dot{width:8px;height:8px;border-radius:50%;background:var(--a);display:inline-block}
+  .logo .mark{width:30px;height:30px;border-radius:9px;background:var(--p);color:#fff;display:grid;place-items:center;font-size:15px;font-weight:800}
+  main{padding:36px 20px 64px}
+  .wrap{max-width:1040px;margin:0 auto}
+  .narrow{max-width:620px;margin:0 auto}
+  h1{font-size:clamp(26px,4vw,40px);line-height:1.15;letter-spacing:-.03em;margin:0 0 12px}
+  h2{letter-spacing:-.02em;margin:0 0 12px}
+  p.lead{color:var(--muted);font-size:17px;margin:0 0 24px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+  .grid{display:grid;gap:16px}
+  @media(min-width:760px){.plans{grid-template-columns:repeat(3,1fr)}.two{grid-template-columns:1.1fr .9fr;align-items:start}}
+  .plan{display:flex;flex-direction:column;gap:10px}
+  .plan .price{font-size:28px;font-weight:800;letter-spacing:-.03em}
+  .plan .price small{font-size:13px;font-weight:500;color:var(--muted)}
+  .plan ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px}
+  .plan.feat{border-color:var(--p);box-shadow:0 0 0 3px color-mix(in srgb, var(--p) 12%, transparent)}
+  .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--p)}
+  label{display:block;font-weight:600;font-size:14px;margin:14px 0 6px}
+  input,select{width:100%;padding:11px 12px;border:1px solid #cbd5e1;border-radius:9px;font-size:15px;background:#fff}
+  input:focus,select:focus{outline:2px solid color-mix(in srgb, var(--p) 35%, transparent);border-color:var(--p)}
+  .hint{font-size:13px;color:var(--muted);margin-top:6px}
+  button,.btn{display:inline-block;background:var(--p);color:#fff;border:0;border-radius:9px;padding:12px 18px;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none}
+  button:hover,.btn:hover{filter:brightness(.94)}
+  .btn.secondary{background:#fff;color:var(--p);border:1px solid var(--p)}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .badge{display:inline-block;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:700}
+  .badge.ok{background:#dcfce7;color:#166534}.badge.wait{background:#fef3c7;color:#92400e}.badge.bad{background:#fee2e2;color:#991b1b}.badge.info{background:#e0f2fe;color:#075985}
+  .alert{border-radius:10px;padding:12px 14px;font-size:14px;margin:0 0 16px}
+  .alert.err{background:#fee2e2;color:#991b1b}.alert.ok{background:#dcfce7;color:#166534}
+  table{width:100%;border-collapse:collapse;font-size:14px;background:#fff}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+  code{background:#0f172a;color:#e2e8f0;padding:2px 6px;border-radius:6px;font-size:13px}
+  footer{color:var(--muted);font-size:13px;padding:24px 20px;text-align:center}
+  .kv{display:grid;grid-template-columns:140px 1fr;gap:8px 12px;font-size:14px}
+  .kv dt{color:var(--muted)}.kv dd{margin:0;font-weight:600}
+  details summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body><div style="background:#0f172a;color:#e2e8f0;padding:8px 16px;text-align:center;font:13px Inter,Segoe UI,sans-serif">Static preview of the NaijaPOS portal. Buttons and forms are not connected to a server.</div>
+<header><div class="bar">
+  <a class="logo" href="/"><span class="mark">N</span>NaijaPOS<span class="dot"></span></a>
+  <nav class="row"><a href="/#pricing">Pricing</a><a href="/businesses">My businesses</a><a class="btn" href="/signup">Start free setup</a></nav>
+</div></header>
+<main class="wrap">
+      <div class="wrap">
+        <p class="tag">Built for Nigerian shops</p>
+        <h1>Point of sale, stock and simple accounting for Nigerian businesses</h1>
+        <p class="lead">NaijaPOS gives your shop a barcode-ready point of sale, multi-branch inventory,
+        purchases, customer records, expenses and simple accounting. Subscription in Naira, no hardware lock-in.</p>
+        <div class="row" style="margin-bottom:34px">
+          <a class="btn" href="/signup">Create my workspace</a>
+          <a class="btn secondary" href="#pricing">See pricing</a>
+        </div>
+        <div class="grid two" style="margin-bottom:40px">
+          <div class="card">
+            <h2>What you get on day one</h2>
+            <ul><li>Sell at the counter with a barcode scanner</li><li>Track stock across shops and warehouses</li><li>Purchases, suppliers and purchase returns</li><li>Customers, credit sales and WhatsApp follow-up</li><li>Expenses with categories</li><li>Simple accounting: chart of accounts, P&amp;L, balance sheet</li><li>Staff users with scoped permissions</li><li>Daily sales and stock reports for the owner</li></ul>
+          </div>
+          <div class="card">
+            <h2>Bring your own hardware</h2>
+            <p class="hint">Use the computer, hand scanner and Moniepoint/card terminal you already own.
+            Card payments settle on your terminal; NaijaPOS records the sale as cash or bank transfer.</p>
+            <h2 style="margin-top:20px">Setup in three steps</h2>
+            <ol class="hint">
+              <li>Pick a subdomain and plan</li>
+              <li>Pay the first month by card or bank transfer</li>
+              <li>Your workspace is created automatically — import products and sell</li>
+            </ol>
+          </div>
+        </div>
+        <h2 id="pricing">Simple monthly pricing</h2>
+        <p class="lead">Every plan includes POS, inventory, customers, suppliers, purchases and reports.</p>
+        <div class="grid plans">
+      <div class="card plan ">
+        <div class="tag">Plan</div>
+        <h3 style="margin:0">Starter</h3>
+        <div class="price">₦15,000 <small>/ month</small></div>
+        <div class="hint">One shop, one counter</div>
+        <ul><li>1 branch / shop</li><li>Owner + 1 staff login</li><li>POS + barcode scanning</li><li>Inventory and stock adjustments</li><li>Customers, suppliers, purchases</li><li>Daily sales reports</li></ul>
+        <a class="btn" href="/signup?plan=starter" style="margin-top:auto">Choose Starter</a>
+      </div>
+      <div class="card plan feat">
+        <div class="tag">Most popular</div>
+        <h3 style="margin:0">Growth</h3>
+        <div class="price">₦35,000 <small>/ month</small></div>
+        <div class="hint">Multi-branch retail</div>
+        <ul><li>Up to 3 branches</li><li>8 staff logins with role scoping</li><li>Stock transfers between branches</li><li>Accounting: chart of accounts, P&amp;L, balance sheet</li><li>Expenses and expense categories</li><li>Excel product import (cost + selling price)</li></ul>
+        <a class="btn" href="/signup?plan=growth" style="margin-top:auto">Choose Growth</a>
+      </div>
+      <div class="card plan ">
+        <div class="tag">Plan</div>
+        <h3 style="margin:0">Enterprise</h3>
+        <div class="price">₦75,000 <small>/ month</small></div>
+        <div class="hint">Chain stores and groups</div>
+        <ul><li>Up to 10 branches / warehouses</li><li>25 staff logins</li><li>HR: attendance, leave, payroll</li><li>Multi-company consolidation</li><li>Priority support + onboarding session</li><li>Custom domain option</li></ul>
+        <a class="btn" href="/signup?plan=enterprise" style="margin-top:auto">Choose Enterprise</a>
+      </div></div>
+      </div></main>
+<footer>NaijaPOS · naijapos.ng · <a href="mailto:support@naijapos.ng">support@naijapos.ng</a></footer>
+</body></html>
