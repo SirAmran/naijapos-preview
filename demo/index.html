@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NaijaPOS · interactive demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap bar">
+        <strong>NaijaPOS <span class="dot"></span></strong>
+        <nav id="tabs" class="tabs"></nav>
+        <div class="who">
+          <select id="role" title="Signed in as"></select>
+          <button id="reset" class="ghost" type="button">Reset demo</button>
+        </div>
+      </div>
+      <div class="wrap notice">
+        Simulation only — every sale, refund and permission change is stored in
+        this browser (localStorage). Nothing is sent anywhere, and no real
+        ERPNext site exists yet.
+      </div>
+    </header>
+
+    <main class="wrap" id="app"></main>
+    <footer class="wrap">NaijaPOS demo · <a href="../">back to the portal preview</a></footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
